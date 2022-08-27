@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod2Sol</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        margin: 100px;
+        text-align: center;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 175%;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .itemA {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(214, 124, 124);
+
+    }
+
+    .itemB {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: maroon;
+
+    }
+
+    .itemC {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 0px;
+        height: 200px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <h1>Our Menu</h1>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="itemA">Chicken</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt eligendi at culpa velit tempora. Maiores omnis eveniet voluptatem numquam consequuntur, excepturi et natus minus architecto error reprehenderit magni obcaecati!
+            </p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="itemB">Beef</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt eligendi at culpa velit tempora. Maiores omnis eveniet voluptatem numquam consequuntur, excepturi et natus minus architecto error reprehenderit magni obcaecati!
+            </p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-12 colmn-sm-12">
+        <div>
+            <p class="itemC">Sushi</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt eligendi at culpa velit tempora. Maiores omnis eveniet voluptatem numquam consequuntur, excepturi et natus minus architecto error reprehenderit magni obcaecati!
+            </p>
+        </div>
+</body>
+
+</html>
